@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-pt-40 sm:scroll-pt-24">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Xavier Dumadapat | Student Portfolio</title>
+        <meta
+            name="description"
+            content="Rick Xavier unknown."
+        >
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+        <style>
+
+            p:hover{color: black;
+            border: 2px solid black;
+        background-color: white;
+    padding-left: 5px;}
+     #bg-video {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;   
+      z-index: -1;        
+    }
+            html {
+                scroll-behavior: smooth;
+            }
+
+            a:focus-visible {
+                outline: 3px solid #93c5fd;
+                outline-offset: 5px;
+            }
+
+            .skip-link {
+                position: fixed;
+                z-index: 60;
+                top: -80px;
+                left: 20px;
+                padding: 10px 16px;
+                background-color: #0f172a;
+                color: #ffffff;
+            }
+
+            .skip-link:focus {
+                top: 10px;
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                html {
+                    scroll-behavior: auto;
+                }
+
+                a {
+                    transition: none;
+                }
+            }
+        </style>
+    </head>
+    <body class="bg-slate-900 pt-36 font-sans leading-relaxed text-slate-100 sm:pt-20">
+        <video id="bg-video" autoplay muted loop playsinline>
+    <source src="c:\Users\Administrator\Downloads\dsadwsadwsadw.gif" type="video/mp4">
+  </video>
+  <button
+  onclick="document.getElementById('bg-video').muted = false;
+           document.getElementById('bg-video').play();"
+  class="fixed bottom-5 right-5 z-50 rounded-lg bg-purple-600 px-5 py-3 text-white"
+>
+  🔊 Turn On Sound
+</button>
+        <a class="skip-link" href="#main">Skip to content</a>
+        <header
+            class="fixed inset-x-0 top-0 z-50 h-36 border-b border-slate-600 bg-slate-900/95 backdrop-blur-sm sm:h-20"
+        >
+            <div
+                class="mx-auto flex h-full max-w-6xl flex-wrap items-center justify-between gap-5 px-6 py-5"
+            >
+                <a class="text-xl font-semibold tracking-tight" href="#home">Rick Xavier C. Dumadapat<span class="text-blue-300">.</span></a>
+                <nav class="flex w-full flex-wrap gap-5 sm:w-auto" aria-label="Main navigation">
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="#home">Home</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="#about">About</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="#skills">Skills</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="#projects">Other</a>
+                    <a class="text-slate-300 hover:text-blue-300 py-2 text-sm" href="#contact">Contact</a>
+                </nav>
+            </div>
+        </header>
+        <main id="main" class="mx-auto max-w-6xl px-6" tabindex="-1">
+            <section
+                id="home"
+                class="grid items-center gap-12 py-12 md:grid-cols-2 md:py-16"
+                aria-label="Introduction"
+            >
+                <div>
+                    <p class="mb-5 font-mono text-sm text-blue-300">BSIT / FIRST YEAR</p>
+                    <h1 class="mb-6 text-5xl font-semibold leading-tight tracking-tight md:text-6xl">Hi, I’m Rick Xavier.<br><span class="text-blue-300">New to IT.<br>Making a start.</span></h1>
+                    <p class="max-w-xl text-lg text-slate-300">
+                        I’m learning how a web page goes from a blank file to something I can share. This is where I
+                        keep my class activities and small experiments.
+                    </p>
+                    <div class="mt-8 flex flex-wrap items-center gap-6">
+                        <a
+                            class="rounded bg-blue-300 px-5 py-3 font-semibold text-slate-900 transition hover:bg-blue-200"
+                            href="#projects"
+                        >
+                            See my projects
+                        </a>
+                        <a
+                            class="text-slate-100 underline underline-offset-4 hover:text-blue-300"
+                            href="#about"
+                        >
+                            More about me
+                        </a>
+                    </div>
+                </div>
+                <figure class="mx-auto w-full max-w-sm">
+                    <img
+                        class="w-full rounded-md bg-slate-800 object-contain"
+                        src="c:\Users\Administrator\Downloads\yawawwwwwwwwwww.jpg"
+                        alt="Xavier"
+                        width="600"
+                        height="600"
+                    >
+                    <figcaption class="mt-3 flex justify-between gap-4 text-xs text-slate-300"><span>Rick Xavier</span><span>First year · BSIT</span></figcaption>
+                </figure>
+            </section>
+            <section
+                id="about"
+                class="grid gap-12 border-t border-slate-600 py-16 md:grid-cols-2"
+                aria-labelledby="about-title"
+            >
+                <div>
+                    <p class="mb-4 font-mono text-sm text-blue-300">A LITTLE BACKGROUND</p>
+                    <h2 id="about-title" class="mb-6 text-3xl font-semibold tracking-tight md:text-4xl">Figuring things out,<br>one lab session at a time.</h2>
+                    <p class="mb-5 text-slate-300">
+                        I’m Rick Xavier Dumadapat, I am a first-year Information Technology student at Cordova Public College. I chose IT because I want to learn how to create things using a computer, not just use what others have already made.
+                    </p>
+                    <p class="mb-5 text-slate-300">
+                        I’m still at the beginning. Some days a layout works right away; other days I spend half an hour
+                        finding a missing closing tag. Both count as practice.
+                    </p>
+                    <p class="text-slate-300">
+                        After class, I listen to music, play a few games with friends, and take photos around the city
+                        with my phone.
+                    </p>
+                </div>
+                <div>
+                    <aside class="rounded-md bg-slate-800 p-6">
+                        <p class="mb-4 font-mono text-xs text-blue-300">MY COLLEGE CHAPTER</p>
+                        <h3 class="mb-3 text-xl font-semibold">BS Information Technology</h3>
+                        <p class="mb-4 text-slate-300">Eastbrook Community College<br>First year · 2026 — Present</p>
+                        <p class="text-sm text-slate-300">Introduction to Computing, Computer Programming, and Web Development Fundamentals.</p>
+                    </aside>
+                    <p class="mt-6 text-slate-300">
+                        This year, I want to understand my code, build a page that works on a phone, and ask better
+                        questions when I get stuck.
+                    </p>
+                </div>
+            </section>
+            <section id="skills" class="py-16" aria-labelledby="skills-title">
+                <h2 id="skills-title" class="mb-8 text-3xl font-semibold tracking-tight md:text-4xl">MY SKILLS</h2>
+                <div class="grid gap-x-12 md:grid-cols-2">
+                    <article class="border-t border-slate-600 py-7">
+                       <h3 class="mb-3 text-2xl font-semibold">Communication Skills</h3>
+                        <p class="text-slate-300">
+                           I value good communication because it helps me express my thoughts clearly, understand others, and build better relationships. I always try to listen, learn, and communicate respectfully with the people around me.
+                        </p>
+                    </article>
+                    <article class="border-t border-slate-600 py-7">
+                        <h3 class="mb-3 text-2xl font-semibold">Problem Solving</h3>
+                        <p class="text-slate-300">
+                            I believe problem-solving is an important skill because it helps me think carefully, find solutions, and learn from challenges. I always try to stay patient and do my best to solve problems step by step.
+                        </p>
+                    </article>
+                    <article class="border-t border-slate-600 py-7">
+                        <h3 class="mb-3 text-2xl font-semibold">Time Management</h3>
+                        <p class="text-slate-300">
+                            I believe time management is important because it helps me stay organized, finish my tasks on time, and balance my studies with other responsibilities. I always try to use my time wisely and focus on what matters most.
+                        </p>
+                    </article>
+                    <article class="border-t border-slate-600 py-7">
+                        <h3 class="mb-3 text-2xl font-semibold">Programming basics</h3>
+                        <p class="text-slate-300">
+                            Variables, conditions, and loops in our class exercises. I use small examples and paper notes to
+                            follow the logic.
+                        </p>
+                    </article>
+                </div>
+            </section>
+            <section id="projects" class="py-16" aria-labelledby="projects-title">
+                <div class="mb-10 grid items-end gap-6 md:grid-cols-2">
+                    <div>
+                   <h2 id="projects-title" class="text-3xl font-semibold tracking-tight md:text-4xl">Other.</h2>
+                    </div>
+                </div>
+                <div class="space-y-12">
+                    <article class="grid items-center gap-8 border-t border-slate-600 pt-8 md:grid-cols-2">
+                        <img
+                            class="w-full rounded-md"
+                            src="c:\Users\Administrator\Downloads\hangout.jpg"
+                            alt="A simple slate and blue personal profile page with an introduction and interests"
+                            width="800"
+                            height="500"
+                            loading="lazy"
+                        >
+                        <div>
+                           <h3 class="mb-4 text-3xl font-semibold tracking-tight">My favorite Place to hangout</h3>
+                            <p class="mb-5 text-slate-300">
+                              My favorite place to chill is by the water, where I can enjoy the beautiful sunset, feel the peaceful atmosphere, and take a break from my busy day.
+                            </p>
+                            </div>
+                    </article>
+                    <article class="grid items-center gap-8 border-t border-slate-600 pt-8 md:grid-cols-2">
+                        <img
+                            class="w-full rounded-md"
+                            src="c:\Users\Administrator\Downloads\gym.jpg"
+                            alt="A warm white restaurant menu with blue headings and a short list of meals"
+                            width="800"
+                            height="500"
+                            loading="lazy"
+                        >   
+                        <div>
+                            <h3 class="mb-4 text-3xl font-semibold tracking-tight">Obsessed Of Being Healthy</h3>
+                            <p class="mb-5 text-slate-300">
+                               I’m passionate about staying healthy and making exercise part of my routine. Going to the gym helps me stay active, feel good, and build healthy habits for myself.
+                            </p>
+                            </div>
+                    </article>
+                    <article class="grid items-center gap-8 border-t border-slate-600 pt-8 md:grid-cols-2">
+                        <img
+                            class="w-full rounded-md"
+                            src="c:\Users\Administrator\Downloads\japan.jpg"
+                            alt="A clean blue and white HTML table showing a weekly study schedule"
+                            width="800"
+                            height="500"
+                            loading="lazy"
+                        >
+                        <div>
+                            <h3 class="mb-4 text-3xl font-semibold tracking-tight">Exploring other Places</h3>
+                            <p class="mb-5 text-slate-300">
+                                I love exploring beautiful places and discovering new things along the way. Visiting places like this lets me appreciate nature, enjoy the moment, and create wonderful memories.
+                            </p>
+                            </div>
+                    </article>
+                </div>
+            </section>
+            <section
+                id="contact"
+                class="grid items-start gap-12 border-t border-slate-600 py-16 md:grid-cols-2"
+                aria-label="Contact"
+            >
+                <div>
+                    <p class="mb-4 font-mono text-sm text-blue-300">CONTACT</p>
+                    <h2 class="mb-6 text-4xl font-semibold tracking-tight md:text-5xl">Got a class project<br>on your mind?</h2>
+                    <p class="max-w-lg text-slate-300">
+                        I’m up for comparing notes, talking through an exercise, or hearing what you’re learning. Email
+                        is the easiest way to reach me.
+                    </p>
+                </div>
+                <div class="rounded-md bg-slate-800 p-6 md:p-8">
+                    <p class="mb-4 text-sm text-slate-300">Say hello at</p>
+                    <a
+                        class="break-words text-xl font-semibold text-blue-300 underline underline-offset-4 hover:text-blue-200"
+                        href="xavierdumadapat12@gmail.com"
+                    >
+                       xavierdumadapat12@gmail.com
+                    </a>
+                    <div class="mt-8 border-t border-slate-600 pt-5 text-sm text-slate-300">
+                        <p>ibabao basak lapu lapu,cebu city</p>
+                        <p class="mt-2">Cordova Public College · BSIT 1-E</p>
+                        </div>
+                </div>
+            </section>
+        </main>
+        <footer class="border-t border-slate-600">
+            <div
+                class="mx-auto flex max-w-6xl flex-wrap justify-between gap-3 px-6 py-6 text-sm text-slate-300"
+            >
+                <p>© Rick Xavier C. Dumadapat</p>
+                <p>BSIT 1-E</p>
+            </div>
+        </footer>
+    </body>
+</html>
